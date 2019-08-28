@@ -3,6 +3,8 @@ buildscript {
 		springBootVersion = '2.0.3.RELEASE'
 	}
 	repositories {
+		maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+		maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
 		mavenCentral()
 	}
 	dependencies {
@@ -29,4 +31,5 @@ repositories {
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
+
 }
